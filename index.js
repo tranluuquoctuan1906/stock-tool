@@ -49,11 +49,17 @@ const timeIgnore = [[1743552000, 1744588800]];
     const price = filteredPriceArr[filteredPriceArr.length - 1];
     const minPrice = Math.min(...filteredPriceArr);
     const maxPrice = Math.max(...filteredPriceArr);
-    viewData.push([symbol, price / minPrice, price / maxPrice]);
+    viewData.push([symbol, price / minPrice, price / maxPrice, (price - minPrice) / (maxPrice - minPrice)]);
     // await new Promise((resolve) => setTimeout(resolve, 1000)); // Thêm delay 1000ms giữa các lần gọi API
   }
+
   // Sort viewData by price/minPrice in ascending order
-  viewData.sort((a, b) => a[1] - b[1]);
-  console.log('List of stocks (symbol, price/minPrice, price/maxPrice):');
+  // viewData.sort((a, b) => a[1] - b[1]);
+
+  // Sort viewData by normalizedPrice in ascending order
+  viewData.sort((a, b) => a[3] - b[3]);
+
+  // Log the final viewData
+  console.log('List of stocks (symbol, price/minPrice, price/maxPrice, normalizedPrice):');
   console.table(viewData);
 })();
