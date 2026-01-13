@@ -50,7 +50,7 @@ const timeIgnore = [[1743552000, 1744588800]];
     const minPrice = Math.min(...filteredPriceArr);
     const maxPrice = Math.max(...filteredPriceArr);
     viewData.push([symbol, price / minPrice, price / maxPrice]);
-    await new Promise((resolve) => setTimeout(resolve, 1000)); // Thêm delay 1000ms giữa các lần gọi API
+    // await new Promise((resolve) => setTimeout(resolve, 1000)); // Thêm delay 1000ms giữa các lần gọi API
   }
   // Sort viewData by price/minPrice in ascending order
   viewData.sort((a, b) => a[1] - b[1]);
