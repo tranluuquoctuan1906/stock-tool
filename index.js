@@ -49,6 +49,7 @@ const timeIgnore = [[1743552000, 1744588800]];
     const price = filteredPriceArr[filteredPriceArr.length - 1];
     const minPrice = Math.min(...filteredPriceArr);
     const maxPrice = Math.max(...filteredPriceArr);
+    console.log(`${symbol}: price=${price}, minPrice=${minPrice}, maxPrice=${maxPrice}`);
     viewData.push([symbol, price / minPrice, price / maxPrice, (price - minPrice) / (maxPrice - minPrice)]);
     // await new Promise((resolve) => setTimeout(resolve, 1000)); // Thêm delay 1000ms giữa các lần gọi API
   }
