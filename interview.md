@@ -1,0 +1,4 @@
+- useState là đồng bộ hay bất đồng bộ ?
+- Event loop
+- Các bước tôi ưu SEO cho một web app
+- component lifecycle
