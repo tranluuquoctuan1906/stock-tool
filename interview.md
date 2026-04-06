@@ -4,3 +4,4 @@
 - Component lifecycle , function and class component
 - Các loại storage trong trình duyệt
 - Lọc một mảng có các phần tử trùng lặp
+- Những gì xảy ra khi người dùng nhập một domain trong trình duyệt
