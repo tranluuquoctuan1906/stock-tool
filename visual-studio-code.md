@@ -1,0 +1,15 @@
+- ES7 + React/Redux/React-Native snnippets
+- ESLint
+- Git Graph
+- Git History
+- GitHub Copilot Chat
+- GitLens supercharged
+- IntelliSence for CSS class names in HTML
+- JavaScript and TypeScript 
+- Material Icon Theme
+- Path Intellisence
+- Prettier - Code formatter
+- Prettier ESLint
+- Simple React Snippets
+- Tailwind CSS IntelliSence
+- Turbo Console Log 
